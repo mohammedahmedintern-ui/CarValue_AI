@@ -13,11 +13,183 @@
 <section class="hero" id="top"><div><div class="eyebrow"><span>✦</span> Smart used-car valuation</div><h1>Know what your car is <span>really worth.</span></h1><p>Get a quick resale estimate with a clean, simple valuation experience. Adjust your car details and explore how age and usage can affect its value.</p><div class="hero-stats"><div class="stat"><strong>India-first</strong><span>Car details</span></div><div class="stat"><strong>Instant</strong><span>Estimate preview</span></div><div class="stat"><strong>2-year</strong><span>Value outlook</span></div></div></div>
 <div class="hero-art"><div class="orb"></div><svg class="car" viewBox="0 0 540 270" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="body" x1="80" y1="100" x2="420" y2="220" gradientUnits="userSpaceOnUse"><stop stop-color="#D8FF8C"/><stop offset=".45" stop-color="#A7D957"/><stop offset="1" stop-color="#4E8E80"/></linearGradient><linearGradient id="glass" x1="200" y1="70" x2="340" y2="150" gradientUnits="userSpaceOnUse"><stop stop-color="#B4D9E4"/><stop offset="1" stop-color="#263B51"/></linearGradient></defs><ellipse cx="277" cy="225" rx="208" ry="17" fill="#68E0D2" fill-opacity=".13"/><path d="M67 172c7-12 19-20 35-24l58-16 53-56c10-11 23-17 38-17h76c17 0 31 7 43 20l43 48 53 14c16 4 26 16 28 32l2 21H59l8-22Z" fill="url(#body)" stroke="#E4FFB6" stroke-opacity=".6" stroke-width="2"/><path d="m179 129 47-51c7-7 15-11 26-11h31v62H179Z" fill="url(#glass)" stroke="#D5F5F0" stroke-opacity=".6" stroke-width="2"/><path d="M295 67h30c13 0 24 5 33 15l41 47H295V67Z" fill="url(#glass)" stroke="#D5F5F0" stroke-opacity=".6" stroke-width="2"/><path d="M61 175h417" stroke="#E4FFB6" stroke-opacity=".55" stroke-width="2"/><path d="M78 164h40" stroke="#F9FFE5" stroke-width="5" stroke-linecap="round"/><path d="M439 163h34" stroke="#FFB89C" stroke-width="6" stroke-linecap="round"/><path d="M161 143h40m102 0h39" stroke="#5D8050" stroke-opacity=".6" stroke-width="3"/><circle cx="151" cy="191" r="32" fill="#101622" stroke="#6F8B83" stroke-width="5"/><circle cx="151" cy="191" r="19" fill="#27384A" stroke="#C6F36B" stroke-width="3"/><circle cx="151" cy="191" r="6" fill="#C6F36B"/><circle cx="402" cy="191" r="32" fill="#101622" stroke="#6F8B83" stroke-width="5"/><circle cx="402" cy="191" r="19" fill="#27384A" stroke="#C6F36B" stroke-width="3"/><circle cx="402" cy="191" r="6" fill="#C6F36B"/><path d="M245 49h54" stroke="#C6F36B" stroke-opacity=".7" stroke-dasharray="3 7" stroke-width="2"/><circle cx="237" cy="49" r="3" fill="#C6F36B"/><circle cx="307" cy="49" r="3" fill="#68E0D2"/></svg></div></section>
 <section class="main" id="estimator"><div class="card formcard"><div class="cardhead"><div><h2>Your car details</h2><div class="sub">Tell us a little about your vehicle</div></div><span class="step">STEP 01 / 02</span></div><form id="carForm"><div class="fields"><div class="field full"><label for="model">Car make & model</label><input id="model" list="models" value="Honda City" placeholder="e.g. Honda City" required><datalist id="models"><option>Maruti Swift</option><option>Maruti Celerio</option><option>Hyundai i20</option><option>Hyundai Creta</option><option>Honda City</option><option>Tata Nexon</option><option>Toyota Innova</option><option>Kia Seltos</option><option>Mahindra XUV500</option><option>Volkswagen Polo</option></datalist></div><div class="field"><label for="year">Manufacturing year</label><select id="year" required></select></div><div class="field"><label for="price">Original / current market reference (₹)</label><input id="price" type="number" min="50000" max="100000000" value="850000" step="10000" required><div class="hint">Use a realistic reference price for your model</div></div><div class="field"><label for="fuel">Fuel type</label><select id="fuel"><option>Petrol</option><option>Diesel</option><option>CNG</option><option>Electric</option><option>Hybrid</option></select></div><div class="field"><label for="transmission">Transmission</label><select id="transmission"><option>Manual</option><option>Automatic</option></select></div><div class="field"><label for="kms">Kilometres driven</label><input id="kms" type="number" min="0" max="1000000" value="45000" required></div><div class="field"><label for="owners">Previous owners</label><select id="owners"><option value="0">First owner</option><option value="1">Second owner</option><option value="2">Third owner</option><option value="3">4+ owners</option></select></div><div class="field full"><label for="city">City</label><select id="city"><option>Hyderabad</option><option>Bengaluru</option><option>Chennai</option><option>Mumbai</option><option>Delhi NCR</option><option>Pune</option><option>Other Indian city</option></select></div></div><button class="submit" type="submit">Estimate resale value <span>↗</span></button><div class="toast" id="toast">Estimate updated successfully.</div></form></div>
-<div class="card resultcard"><div class="cardhead"><div><div class="resultlabel"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7H14a3.5 3.5 0 0 1 0 7H6"/></svg> ESTIMATED RESALE VALUE</div><div class="price" id="currentPrice">₹3,81,090</div><div class="resultnote">Indicative estimate · not a dealer quote</div></div><button class="reset" id="reset" type="button">Reset ↺</button></div><div class="divider"></div><div class="forecast"><div><h3>Illustrative future value</h3><p>Estimated value in 2 years</p></div><div class="futureprice" id="futurePrice">₹3,08,683<span>↓ <b id="depreciation">19.0%</b> total</span></div></div><div class="bars"><div class="barlabel"><span>Estimated value retained</span><span id="retained">81%</span></div><div class="bartrack"><div class="barfill" id="barfill"></div></div></div><div class="pillrow"><span class="pill" id="pillModel">Honda City</span><span class="pill" id="pillYear">2015 model</span><span class="pill" id="pillKm">45,000 km</span><span class="pill" id="pillCity">Hyderabad</span></div><div class="notice"><strong>Important:</strong> This is a front-end demonstration estimator using a simplified illustrative calculation, not your trained Random Forest model or live market data. For a trustworthy valuation, connect the site to a hosted prediction API and validate it against recent sale listings.</div></div></section>
-<section class="features" id="how"><div class="feature"><div class="featureicon">⌁</div><h3>Quick estimate</h3><p>Enter basic vehicle details and see an illustrative resale estimate instantly.</p></div><div class="feature"><div class="featureicon">◷</div><h3>Future value preview</h3><p>Explore a two-year outlook based on a clearly stated depreciation assumption.</p></div><div class="feature"><div class="featureicon">⌘</div><h3>Built for iteration</h3><p>Designed as a responsive web interface that can later connect to your trained ML backend.</p></div></section>
+<div class="card resultcard"><div class="cardhead"><div><div class="resultlabel"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7H14a3.5 3.5 0 0 1 0 7H6"/></svg> ESTIMATED RESALE VALUE</div><div class="price" id="currentPrice">₹3,81,090</div><div class="resultnote">Indicative estimate · not a dealer quote</div></div><button class="reset" id="reset" type="button">Reset ↺</button></div><div class="divider"></div><div class="forecast"><div><h3>Illustrative future value</h3><p>Estimated value in 2 years</p></div><div class="futureprice" id="futurePrice">₹3,08,683<span>↓ <b id="depreciation">19.0%</b> total</span></div></div><div class="bars"><div class="barlabel"><span>Estimated value retained</span><span id="retained">81%</span></div><div class="bartrack"><div class="barfill" id="barfill"></div></div></div><div class="pillrow"><span class="pill" id="pillModel">Honda City</span><span class="pill" id="pillYear">2015 model</span><span class="pill" id="pillKm">45,000 km</span><span class="pill" id="pillCity">Hyderabad</span></div><div class="notice"><strong>Important:</strong>
+<strong>Important:</strong> Predictions are generated by the CarValue AI Random Forest model using historical listing data, mainly from 2019–2021. Estimates may differ from current market prices. The future value is illustrative and assumes 10% annual depreciation.
+.</p></div><div class="feature"><div class="featureicon">◷</div><h3>Future value preview</h3><p>Explore a two-year outlook based on a clearly stated depreciation assumption.</p></div><div class="feature"><div class="featureicon">⌘</div><h3>Built for iteration</h3><p>Designed as a responsive web interface that can later connect to your trained ML backend.</p></div></section>
 <footer class="footer"><div><strong>CarValue AI</strong> · A machine-learning project by Ahmed</div><div>Prototype for learning · Estimates are illustrative</div></footer></div>
+
 <script>
-const yearSelect=document.getElementById('year');const thisYear=new Date().getFullYear();for(let y=thisYear;y>=2000;y--){const o=document.createElement('option');o.value=y;o.textContent=y;if(y===2015)o.selected=true;yearSelect.appendChild(o)}
-const fmt=n=>'₹'+Math.round(n).toLocaleString('en-IN');function estimate(){const year=+document.getElementById('year').value;const ref=Math.max(50000,+document.getElementById('price').value||50000);const kms=Math.max(0,+document.getElementById('kms').value||0);const owners=+document.getElementById('owners').value;const fuel=document.getElementById('fuel').value;const trans=document.getElementById('transmission').value;const age=Math.max(0,thisYear-year);let ageFactor=Math.pow(.91,age);let kmFactor=Math.max(.58,1-Math.max(0,kms-15000)/280000);let ownerFactor=Math.max(.83,1-owners*.045);let fuelFactor=fuel==='Diesel'?1.025:fuel==='Electric'?.94:fuel==='CNG'?.97:fuel==='Hybrid'?1.04:1;let transFactor=trans==='Automatic'?1.025:1;let value=Math.max(45000,ref*ageFactor*kmFactor*ownerFactor*fuelFactor*transFactor);let future=value*Math.pow(.90,2);document.getElementById('currentPrice').textContent=fmt(value);document.getElementById('futurePrice').innerHTML=fmt(future)+'<span>↓ <b id="depreciation">19.0%</b> total</span>';document.getElementById('retained').textContent=Math.round(future/value*100)+'%';document.getElementById('barfill').style.width=Math.round(future/value*100)+'%';document.getElementById('pillModel').textContent=document.getElementById('model').value||'Car model';document.getElementById('pillYear').textContent=year+' model';document.getElementById('pillKm').textContent=Math.round(kms).toLocaleString('en-IN')+' km';document.getElementById('pillCity').textContent=document.getElementById('city').value;document.getElementById('toast').style.display='block';}
-document.getElementById('carForm').addEventListener('submit',e=>{e.preventDefault();estimate()});document.getElementById('reset').addEventListener('click',()=>{document.getElementById('model').value='Honda City';document.getElementById('year').value=2015;document.getElementById('price').value=850000;document.getElementById('fuel').value='Petrol';document.getElementById('transmission').value='Manual';document.getElementById('kms').value=45000;document.getElementById('owners').value=0;document.getElementById('city').value='Hyderabad';estimate()});estimate();
-</script></body></html>
+const API_URL = "https://carvalue-ai-14b8.onrender.com";
+
+const $ = id => document.getElementById(id);
+const fmt = n => "₹" + Math.round(n).toLocaleString("en-IN");
+
+let apiReady = false;
+
+function setOptions(select, values, preferred) {
+    select.replaceChildren();
+
+    values.forEach(value => {
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = value;
+        select.appendChild(option);
+    });
+
+    if (values.includes(preferred)) {
+        select.value = preferred;
+    }
+}
+
+async function loadOptions() {
+    try {
+        const response = await fetch(API_URL + "/options");
+        if (!response.ok) throw new Error("Could not load options");
+
+        const data = await response.json();
+
+        const modelList = $("models");
+        if (modelList) {
+            modelList.replaceChildren();
+            data.models.forEach(value => {
+                const option = document.createElement("option");
+                option.value = value;
+                modelList.appendChild(option);
+            });
+        }
+
+        setOptions($("city"), data.cities, "hyderabad");
+        setOptions($("fuel"), data.fuels, "petrol");
+
+        // Use transmission categories supported by the dataset.
+        setOptions($("transmission"), ["manual", "automatic", "unknown"], "manual");
+
+        // Dataset years are limited to 1990–2021.
+        setOptions(
+            $("year"),
+            Array.from({ length: 32 }, (_, i) => String(2021 - i)),
+            "2015"
+        );
+
+        // Use a category that exists in the training dataset.
+        if (data.models.includes("honda city")) {
+            $("model").value = "honda city";
+        } else if (data.models.length) {
+            $("model").value = data.models[0];
+        }
+
+        apiReady = true;
+        estimate();
+    } catch (error) {
+        apiReady = false;
+        $("toast").textContent =
+            "API unavailable. Start the Python prediction server and refresh this page.";
+        $("toast").style.display = "block";
+        console.error(error);
+    }
+}
+
+async function estimate() {
+    if (!apiReady) return;
+
+    const year = Number($("year").value);
+    const kms = Number($("kms").value);
+    const owners = Number($("owners").value) + 1;
+
+    const payload = {
+        car_name: $("model").value.trim().toLowerCase(),
+        yr_mfr: year,
+        fuel_type: $("fuel").value.trim().toLowerCase(),
+        kms_run: kms,
+        city: $("city").value.trim().toLowerCase(),
+        transmission: $("transmission").value.trim().toLowerCase(),
+        total_owners: owners
+    };
+
+    if (!payload.car_name || !Number.isFinite(kms) || kms < 0) {
+        $("toast").textContent = "Enter a valid car model and kilometres driven.";
+        $("toast").style.display = "block";
+        return;
+    }
+
+    try {
+        $("toast").textContent = "Getting prediction from the trained ML model…";
+        $("toast").style.display = "block";
+
+        const response = await fetch(API_URL + "/predict", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+        });
+
+        const result = await response.json();
+
+        if (!response.ok) {
+            throw new Error(result.detail
+                ? JSON.stringify(result.detail)
+                : "Prediction request failed");
+        }
+
+        const value = result.estimated_value;
+        const future = value * Math.pow(0.90, 2);
+        const retained = Math.round((future / value) * 100);
+
+        $("currentPrice").textContent = fmt(value);
+        $("futurePrice").innerHTML =
+            fmt(future) +
+            '<span>Illustrative 2-year estimate; assumes 10% depreciation per year</span>';
+
+        $("retained").textContent = retained + "%";
+        $("barfill").style.width = retained + "%";
+        $("pillModel").textContent = payload.car_name;
+        $("pillYear").textContent = year + " model";
+        $("pillKm").textContent = kms.toLocaleString("en-IN") + " km";
+        $("pillCity").textContent = payload.city;
+
+        $("toast").textContent =
+            "ML prediction received. " +
+            result.historical_matching_records +
+            " matching historical records. " +
+            result.note +
+            " Future value is illustrative, not an ML prediction.";
+        $("toast").style.display = "block";
+
+    } catch (error) {
+        $("toast").textContent =
+            "Prediction failed: " + error.message +
+            ". Check your model, selected options and API server.";
+        $("toast").style.display = "block";
+        console.error(error);
+    }
+}
+
+$("carForm").addEventListener("submit", event => {
+    event.preventDefault();
+    estimate();
+});
+
+$("reset").addEventListener("click", () => {
+    $("model").value = "honda city";
+    $("year").value = "2015";
+    $("price").value = "850000";
+    $("kms").value = "45000";
+    $("owners").value = "0";
+
+    if (apiReady) {
+        if ([...$("fuel").options].some(o => o.value === "petrol")) {
+            $("fuel").value = "petrol";
+        }
+        if ([...$("transmission").options].some(o => o.value === "manual")) {
+            $("transmission").value = "manual";
+        }
+        if ([...$("city").options].some(o => o.value === "hyderabad")) {
+            $("city").value = "hyderabad";
+        }
+    }
+
+    estimate();
+});
+
+loadOptions();
+</script>
+</body></html>
