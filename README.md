@@ -6,7 +6,14 @@ A responsive single-page HTML/CSS/JavaScript frontend for the CarValue AI portfo
 Open `index.html` in a browser. No build step is needed.
 
 ## Important model note
-This is a static frontend demo. Its browser-side estimate uses a simplified illustrative formula; it does **not** run the Python Random Forest model and does not query live listings. To serve real ML predictions, deploy the Python model as an API on a Python-capable host and connect this page to that API.
+The frontend calls the FastAPI backend configured in `index.html` for Random Forest predictions. The model uses historical listings mainly from 2019–2021, so estimates are not live market quotes.
+
+## DSA features
+- **Linked list:** stores successful valuations as linked nodes for a session timeline.
+- **Queue:** processes prediction requests FIFO (first in, first out).
+- **Stack:** stores successful valuations LIFO (last in, first out) and supports undoing the latest displayed result.
+
+These DSA records are kept in browser memory for the current session and reset on refresh. The ML model and API remain separate.
 
 ## Deploy to Netlify from GitHub
 1. Push this folder's files to a GitHub repository.

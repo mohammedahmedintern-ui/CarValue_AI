@@ -7,6 +7,31 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#080b13;--panel:#101622;--panel2:#141d2b;--line:rgba(174,193,220,.13);--muted:#8b9ab0;--text:#f4f7fb;--lime:#c6f36b;--cyan:#68e0d2;--purple:#9b8cff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 78% 0%,rgba(104,224,210,.09),transparent 34%),radial-gradient(ellipse at 8% 20%,rgba(155,140,255,.08),transparent 30%),var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min-height:100vh}button,input,select{font:inherit}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:11px;font-family:Manrope,sans-serif;font-weight:800;font-size:19px;letter-spacing:-.6px}.logo{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--lime),var(--cyan));display:grid;place-items:center;color:#0b1116;box-shadow:0 6px 28px #c6f36b25}.navright{display:flex;align-items:center;gap:20px;color:var(--muted);font-size:13px}.status{border:1px solid var(--line);padding:8px 12px;border-radius:30px;color:#c8d3e3;display:flex;align-items:center;gap:8px}.dot{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 10px var(--lime)}.hero{padding:62px 0 34px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:40px}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border-radius:30px;background:#c6f36b10;border:1px solid #c6f36b30;color:var(--lime);font-size:11px;letter-spacing:1.5px;font-weight:700;text-transform:uppercase}.hero h1{font-family:Manrope,sans-serif;font-size:clamp(38px,5vw,62px);line-height:1.07;letter-spacing:-3px;margin:22px 0 18px;max-width:650px}.hero h1 span{color:var(--lime)}.hero p{color:#9ba9bc;line-height:1.8;font-size:15px;max-width:510px;margin:0}.hero-art{position:relative;min-height:250px;display:flex;align-items:center;justify-content:center;overflow:hidden}.orb{position:absolute;width:270px;height:270px;border-radius:50%;background:radial-gradient(circle,#68e0d222,transparent 68%);border:1px solid #68e0d21c}.car{position:relative;width:100%;max-width:470px;filter:drop-shadow(0 22px 22px #0008)}.hero-stats{display:flex;gap:28px;margin-top:27px}.stat strong{font-family:Manrope;font-size:20px;display:block}.stat span{font-size:11px;color:var(--muted)}.main{display:grid;grid-template-columns:1.02fr .98fr;gap:20px;padding:22px 0 70px}.card{border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(20,29,43,.94),rgba(12,17,27,.96));box-shadow:0 20px 65px #0002}.formcard{padding:27px}.cardhead{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:24px}.cardhead h2{font-family:Manrope;font-size:20px;margin:0 0 6px;letter-spacing:-.5px}.sub{color:var(--muted);font-size:12px}.step{color:var(--lime);font-size:11px;border:1px solid #c6f36b30;background:#c6f36b0c;padding:7px 10px;border-radius:8px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:17px}.field.full{grid-column:1/-1}.field label{display:block;font-size:12px;color:#c6d0df;margin-bottom:8px}.field input,.field select{width:100%;border:1px solid #263247;border-radius:11px;background:#0b111b;color:#f4f7fb;padding:13px 12px;outline:none;transition:.2s}.field input:focus,.field select:focus{border-color:#c6f36b80;box-shadow:0 0 0 3px #c6f36b0d}.field select option{background:#101622}.hint{font-size:10px;color:#6f8097;margin-top:7px}.submit{width:100%;border:0;border-radius:12px;background:var(--lime);color:#11170c;font-weight:800;padding:15px;margin-top:23px;cursor:pointer;transition:transform .2s,filter .2s;display:flex;justify-content:center;align-items:center;gap:10px}.submit:hover{transform:translateY(-2px);filter:brightness(1.05)}.resultcard{padding:27px;position:relative;overflow:hidden}.resultcard:before{content:'';position:absolute;width:240px;height:240px;right:-90px;top:-90px;background:radial-gradient(circle,#c6f36b12,transparent 70%);pointer-events:none}.resultlabel{display:flex;align-items:center;gap:9px;color:#b8c5d7;font-size:12px}.resultlabel svg{color:var(--lime)}.price{font-family:Manrope;font-weight:800;font-size:clamp(36px,4vw,49px);letter-spacing:-2px;margin:16px 0 4px}.price small{font-size:17px;letter-spacing:0;color:#9aabc0}.resultnote{color:var(--muted);font-size:11px}.divider{height:1px;background:var(--line);margin:25px 0}.forecast{display:flex;align-items:center;justify-content:space-between;gap:12px}.forecast h3{font-size:13px;margin:0 0 5px}.forecast p{font-size:11px;color:var(--muted);margin:0}.futureprice{font-family:Manrope;font-weight:800;font-size:23px;letter-spacing:-.8px}.futureprice span{font-size:12px;color:var(--lime);display:block;text-align:right;margin-top:4px;letter-spacing:0}.bars{margin-top:24px}.barlabel{display:flex;justify-content:space-between;color:#aab8cb;font-size:11px;margin-bottom:8px}.bartrack{height:7px;background:#202b3b;border-radius:20px;overflow:hidden}.barfill{height:100%;width:78%;background:linear-gradient(90deg,var(--lime),var(--cyan));border-radius:20px;transition:width .4s}.pillrow{display:flex;flex-wrap:wrap;gap:7px;margin-top:22px}.pill{font-size:10px;color:#b8c6d8;border:1px solid var(--line);background:#ffffff04;padding:7px 9px;border-radius:8px}.notice{margin-top:18px;padding:12px 13px;border-radius:10px;background:#f6c9690c;border:1px solid #f6c96925;color:#b8a985;font-size:10px;line-height:1.6}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 65px}.feature{padding:20px;border:1px solid var(--line);border-radius:16px;background:#ffffff03}.featureicon{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;color:var(--lime);background:#c6f36b12;margin-bottom:15px}.feature h3{font-size:13px;margin:0 0 7px}.feature p{font-size:11px;color:var(--muted);line-height:1.7;margin:0}.footer{border-top:1px solid var(--line);padding:22px 0 30px;display:flex;justify-content:space-between;gap:15px;color:#66758b;font-size:11px}.footer strong{color:#b8c5d7}.toast{display:none;color:var(--lime);font-size:11px;margin-top:12px}.reset{background:transparent;color:var(--muted);border:0;cursor:pointer;font-size:11px}.resultcard .cardhead{margin-bottom:28px}@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:44px;gap:5px}.hero-art{min-height:170px}.car{max-width:360px}.main{grid-template-columns:1fr}.hero h1{letter-spacing:-2px}.features{grid-template-columns:1fr}.navright a{display:none}}@media(max-width:460px){.wrap{width:min(100% - 24px,1160px)}.nav{height:68px}.hero-stats{gap:18px}.formcard,.resultcard{padding:20px}.fields{gap:13px}.price{font-size:38px}.futureprice{font-size:20px}.footer{flex-direction:column}}
+
+/* DSA lab */
+.dsa-section{padding:28px 0 72px}
+.dsa-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:22px}
+.dsa-heading h2{font:800 clamp(24px,3vw,34px) Manrope,sans-serif;margin:8px 0}
+.dsa-heading p{color:var(--muted);max-width:650px;line-height:1.65;margin:0}
+.dsa-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.dsa-card{background:linear-gradient(155deg,rgba(20,29,43,.96),rgba(13,19,30,.98));border:1px solid var(--line);border-radius:20px;padding:22px;min-width:0}
+.dsa-card h3{font:700 18px Manrope,sans-serif;margin:0 0 8px}
+.dsa-card p{color:var(--muted);font-size:14px;line-height:1.6;margin:0 0 16px}
+.dsa-kicker{font-size:11px;letter-spacing:.13em;color:var(--lime);font-weight:800;margin-bottom:10px}
+.dsa-list{display:grid;gap:9px;max-height:250px;overflow:auto}
+.dsa-item{padding:12px 13px;border:1px solid var(--line);background:rgba(255,255,255,.025);border-radius:12px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13px}
+.dsa-item strong{display:block;font-size:13px;overflow-wrap:anywhere}
+.dsa-item small{color:var(--muted);display:block;margin-top:4px}
+.dsa-empty{padding:16px;border:1px dashed var(--line);border-radius:12px;color:var(--muted);font-size:13px;text-align:center}
+.dsa-controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.dsa-btn{border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--text);padding:10px 12px;border-radius:10px;cursor:pointer;font-weight:700;font-size:12px}
+.dsa-btn:hover{border-color:var(--cyan)}
+.dsa-status{font-size:12px;color:var(--muted);margin-top:12px;line-height:1.5}
+.dsa-status strong{color:var(--cyan)}
+.queue-track{display:flex;gap:7px;flex-wrap:wrap;margin-top:8px}
+.queue-chip{font-size:11px;border-radius:999px;padding:7px 10px;border:1px solid rgba(104,224,210,.25);background:rgba(104,224,210,.07);color:var(--cyan)}
+@media(max-width:850px){.dsa-grid{grid-template-columns:1fr}.dsa-heading{display:block}.dsa-card{padding:18px}}
+
 </style></head>
 <body><div class="wrap">
 <header class="nav"><a class="brand" href="#top"><span class="logo"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="m3 13 2-6a2 2 0 0 1 2-1h10a2 2 0 0 1 2 1l2 6"/><path d="M5 13h14a2 2 0 0 1 2 2v3h-3v-2H6v2H3v-3a2 2 0 0 1 2-2Z"/><path d="M7 10h10"/></svg></span>CarValue<span style="color:var(--lime)">AI</span></a><div class="navright"><a href="#estimator">Estimator</a><a href="#how">How it works</a><span class="status"><i class="dot"></i> DEMO ESTIMATOR</span></div></header>
@@ -16,6 +41,42 @@
 <div class="card resultcard"><div class="cardhead"><div><div class="resultlabel"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7H14a3.5 3.5 0 0 1 0 7H6"/></svg> ESTIMATED RESALE VALUE</div><div class="price" id="currentPrice">₹3,81,090</div><div class="resultnote">Indicative estimate · not a dealer quote</div></div><button class="reset" id="reset" type="button">Reset ↺</button></div><div class="divider"></div><div class="forecast"><div><h3>Illustrative future value</h3><p>Estimated value in 2 years</p></div><div class="futureprice" id="futurePrice">₹3,08,683<span>↓ <b id="depreciation">19.0%</b> total</span></div></div><div class="bars"><div class="barlabel"><span>Estimated value retained</span><span id="retained">81%</span></div><div class="bartrack"><div class="barfill" id="barfill"></div></div></div><div class="pillrow"><span class="pill" id="pillModel">Honda City</span><span class="pill" id="pillYear">2015 model</span><span class="pill" id="pillKm">45,000 km</span><span class="pill" id="pillCity">Hyderabad</span></div><div class="notice"><strong>Important:</strong>
 <strong>Important:</strong> Predictions are generated by the CarValue AI Random Forest model using historical listing data, mainly from 2019–2021. Estimates may differ from current market prices. The future value is illustrative and assumes 10% annual depreciation.
 .</p></div><div class="feature"><div class="featureicon">◷</div><h3>Future value preview</h3><p>Explore a two-year outlook based on a clearly stated depreciation assumption.</p></div><div class="feature"><div class="featureicon">⌘</div><h3>Built for iteration</h3><p>Designed as a responsive web interface that can later connect to your trained ML backend.</p></div></section>
+
+<section class="dsa-section wrap" id="dsa-lab">
+  <div class="dsa-heading">
+    <div>
+      <div class="eyebrow"><span>✦</span> Data structures in action</div>
+      <h2>CarValuee DSA Lab</h2>
+      <p>These are working data structures connected to the valuation flow: a linked list keeps the session history, a FIFO queue processes prediction requests in order, and a LIFO stack lets you undo the latest displayed valuation.</p>
+    </div>
+  </div>
+  <div class="dsa-grid">
+    <article class="dsa-card">
+      <div class="dsa-kicker">01 / LINKED LIST</div>
+      <h3>Valuation timeline</h3>
+      <p>Every successful ML result becomes a node linked to the next record. The newest valuation appears first in this view.</p>
+      <div class="dsa-list" id="linkedListView" aria-live="polite"><div class="dsa-empty">Your successful valuations will appear here.</div></div>
+      <div class="dsa-status" id="linkedListStatus">Nodes: <strong>0</strong> · Traversal: head → next</div>
+    </article>
+    <article class="dsa-card">
+      <div class="dsa-kicker">02 / FIFO QUEUE</div>
+      <h3>Prediction request queue</h3>
+      <p>Submitted prediction jobs wait in first-in, first-out order. The front job is processed before the next one.</p>
+      <div class="dsa-list" id="queueView" aria-live="polite"><div class="dsa-empty">No waiting jobs.</div></div>
+      <div class="dsa-status" id="queueStatus">Queue length: <strong>0</strong> · Processed: <strong>0</strong></div>
+    </article>
+    <article class="dsa-card">
+      <div class="dsa-kicker">03 / LIFO STACK</div>
+      <h3>Undo recent valuation</h3>
+      <p>Successful results are pushed onto a stack. Undo pops the latest result and restores the previous valuation, when available.</p>
+      <div class="dsa-list" id="stackView" aria-live="polite"><div class="dsa-empty">The stack is empty until a prediction succeeds.</div></div>
+      <div class="dsa-controls"><button class="dsa-btn" id="undoValuation" type="button">↶ Undo latest valuation</button></div>
+      <div class="dsa-status" id="stackStatus">Stack size: <strong>0</strong> · Top → bottom</div>
+    </article>
+  </div>
+  <div class="dsa-status" style="margin-top:16px">Note: these structures run in this browser session. Refreshing the page starts a fresh DSA session; the ML prediction model remains on the API.</div>
+</section>
+
 <footer class="footer"><div><strong>CarValue AI</strong> · A machine-learning project by Ahmed</div><div>Prototype for learning · Estimates are illustrative</div></footer></div>
 
 <script>
@@ -89,14 +150,126 @@ async function loadOptions() {
     }
 }
 
-async function estimate() {
-    if (!apiReady) return;
 
+// Explicit DSA implementations (not built-in array shortcuts).
+class ListNode {
+    constructor(value) { this.value = value; this.next = null; }
+}
+class ValuationLinkedList {
+    constructor() { this.head = null; this.length = 0; }
+    add(value) {
+        const node = new ListNode(value);
+        node.next = this.head;
+        this.head = node;
+        this.length++;
+    }
+    toArray() {
+        const items = [];
+        let current = this.head;
+        while (current) { items.push(current.value); current = current.next; }
+        return items;
+    }
+}
+class QueueNode {
+    constructor(value) { this.value = value; this.next = null; }
+}
+class PredictionQueue {
+    constructor() { this.front = null; this.rear = null; this.length = 0; }
+    enqueue(value) {
+        const node = new QueueNode(value);
+        if (this.rear) this.rear.next = node;
+        else this.front = node;
+        this.rear = node;
+        this.length++;
+    }
+    dequeue() {
+        if (!this.front) return null;
+        const node = this.front;
+        this.front = node.next;
+        if (!this.front) this.rear = null;
+        this.length--;
+        return node.value;
+    }
+    toArray() {
+        const items = [];
+        let current = this.front;
+        while (current) { items.push(current.value); current = current.next; }
+        return items;
+    }
+}
+class StackNode {
+    constructor(value) { this.value = value; this.next = null; }
+}
+class ValuationStack {
+    constructor() { this.top = null; this.length = 0; }
+    push(value) {
+        const node = new StackNode(value);
+        node.next = this.top;
+        this.top = node;
+        this.length++;
+    }
+    pop() {
+        if (!this.top) return null;
+        const node = this.top;
+        this.top = node.next;
+        this.length--;
+        return node.value;
+    }
+    peek() { return this.top ? this.top.value : null; }
+    toArray() {
+        const items = [];
+        let current = this.top;
+        while (current) { items.push(current.value); current = current.next; }
+        return items;
+    }
+}
+
+const valuationHistory = new ValuationLinkedList();
+const predictionQueue = new PredictionQueue();
+const valuationStack = new ValuationStack();
+let queueIsProcessing = false;
+let processedPredictions = 0;
+let jobSequence = 0;
+let currentValuation = null;
+
+function safeText(value) {
+    return String(value ?? "").replace(/[&<>"']/g, char => ({
+        "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
+    }[char]));
+}
+function renderLinkedList() {
+    const view = $("linkedListView");
+    const items = valuationHistory.toArray();
+    view.innerHTML = items.length ? items.map((item, i) =>
+        `<div class="dsa-item"><div><strong>${safeText(item.model)}</strong><small>${safeText(item.city)} · ${safeText(item.year)} · ${safeText(item.kms.toLocaleString("en-IN"))} km</small></div><strong>${fmt(item.value)}</strong></div>`
+    ).join("") : '<div class="dsa-empty">Your successful valuations will appear here.</div>';
+    $("linkedListStatus").innerHTML = `Nodes: <strong>${valuationHistory.length}</strong> · Traversal: head → next`;
+}
+function renderQueue() {
+    const view = $("queueView");
+    const items = predictionQueue.toArray();
+    view.innerHTML = items.length ? items.map(job =>
+        `<div class="dsa-item"><div><strong>Request #${job.id}</strong><small>${safeText(job.payload.car_name)} · ${safeText(job.payload.city)}</small></div><span class="queue-chip">Waiting</span></div>`
+    ).join("") : '<div class="dsa-empty">No waiting jobs.</div>';
+    $("queueStatus").innerHTML = `Queue length: <strong>${predictionQueue.length}</strong> · Processed: <strong>${processedPredictions}</strong>${queueIsProcessing ? ' · <strong>Processing front job…</strong>' : ''}`;
+}
+function renderStack() {
+    const view = $("stackView");
+    const items = valuationStack.toArray();
+    view.innerHTML = items.length ? items.slice(0, 5).map((item, i) =>
+        `<div class="dsa-item"><div><strong>${i === 0 ? "TOP · " : ""}${safeText(item.model)}</strong><small>${safeText(item.city)} · ${safeText(item.time)}</small></div><strong>${fmt(item.value)}</strong></div>`
+    ).join("") : '<div class="dsa-empty">The stack is empty until a prediction succeeds.</div>';
+    $("stackStatus").innerHTML = `Stack size: <strong>${valuationStack.length}</strong> · Top → bottom`;
+    $("undoValuation").disabled = valuationStack.length === 0;
+    $("undoValuation").style.opacity = valuationStack.length === 0 ? ".5" : "1";
+}
+function renderDSA() { renderLinkedList(); renderQueue(); renderStack(); }
+
+function makePayload() {
     const year = Number($("year").value);
     const kms = Number($("kms").value);
     const owners = Number($("owners").value) + 1;
-
-    const payload = {
+    return {
         car_name: $("model").value.trim().toLowerCase(),
         yr_mfr: year,
         fuel_type: $("fuel").value.trim().toLowerCase(),
@@ -105,91 +278,142 @@ async function estimate() {
         transmission: $("transmission").value.trim().toLowerCase(),
         total_owners: owners
     };
-
-    if (!payload.car_name || !Number.isFinite(kms) || kms < 0) {
+}
+function estimate() {
+    if (!apiReady) return;
+    const payload = makePayload();
+    if (!payload.car_name || !Number.isFinite(payload.kms_run) || payload.kms_run < 0) {
         $("toast").textContent = "Enter a valid car model and kilometres driven.";
         $("toast").style.display = "block";
         return;
     }
-
+    jobSequence++;
+    predictionQueue.enqueue({ id: jobSequence, payload });
+    $("toast").textContent = `Prediction request #${jobSequence} added to the FIFO queue.`;
+    $("toast").style.display = "block";
+    renderQueue();
+    processPredictionQueue();
+}
+async function processPredictionQueue() {
+    if (queueIsProcessing) return;
+    queueIsProcessing = true;
+    renderQueue();
+    while (predictionQueue.length > 0) {
+        const job = predictionQueue.dequeue();
+        renderQueue();
+        await runPrediction(job);
+        processedPredictions++;
+        renderQueue();
+    }
+    queueIsProcessing = false;
+    renderQueue();
+}
+async function runPrediction(job) {
+    const payload = job.payload;
     try {
-        $("toast").textContent = "Getting prediction from the trained ML model…";
+        $("toast").textContent = `Processing prediction request #${job.id}…`;
         $("toast").style.display = "block";
-
         const response = await fetch(API_URL + "/predict", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(payload)
         });
-
         const result = await response.json();
-
         if (!response.ok) {
-            throw new Error(result.detail
-                ? JSON.stringify(result.detail)
-                : "Prediction request failed");
+            throw new Error(result.detail ? JSON.stringify(result.detail) : "Prediction request failed");
         }
 
-        const value = result.estimated_value;
+        const value = Number(result.estimated_value);
         const future = value * Math.pow(0.90, 2);
         const retained = Math.round((future / value) * 100);
+        const valuation = {
+            value, model: payload.car_name, city: payload.city,
+            year: payload.yr_mfr, kms: payload.kms_run,
+            time: new Date().toLocaleTimeString([], {hour: "2-digit", minute: "2-digit"}),
+            future, retained, result
+        };
 
         $("currentPrice").textContent = fmt(value);
-        $("futurePrice").innerHTML =
-            fmt(future) +
+        $("futurePrice").innerHTML = fmt(future) +
             '<span>Illustrative 2-year estimate; assumes 10% depreciation per year</span>';
-
         $("retained").textContent = retained + "%";
         $("barfill").style.width = retained + "%";
         $("pillModel").textContent = payload.car_name;
-        $("pillYear").textContent = year + " model";
-        $("pillKm").textContent = kms.toLocaleString("en-IN") + " km";
+        $("pillYear").textContent = payload.yr_mfr + " model";
+        $("pillKm").textContent = payload.kms_run.toLocaleString("en-IN") + " km";
         $("pillCity").textContent = payload.city;
 
-        $("toast").textContent =
-            "ML prediction received. " +
-            result.historical_matching_records +
-            " matching historical records. " +
-            result.note +
-            " Future value is illustrative, not an ML prediction.";
+        // Store the successful result in both the linked list and LIFO stack.
+        valuationHistory.add(valuation);
+        valuationStack.push(valuation);
+        currentValuation = valuation;
+        renderLinkedList();
+        renderStack();
+        $("toast").textContent = "ML prediction received. " +
+            result.historical_matching_records + " matching historical records. " +
+            result.note + " Future value is illustrative, not an ML prediction.";
         $("toast").style.display = "block";
-
     } catch (error) {
-        $("toast").textContent =
-            "Prediction failed: " + error.message +
+        $("toast").textContent = "Prediction failed: " + error.message +
             ". Check your model, selected options and API server.";
         $("toast").style.display = "block";
         console.error(error);
     }
 }
-
+function showValuation(item) {
+    if (!item) return;
+    $("currentPrice").textContent = fmt(item.value);
+    $("futurePrice").innerHTML = fmt(item.future) +
+        '<span>Illustrative 2-year estimate; assumes 10% depreciation per year</span>';
+    $("retained").textContent = item.retained + "%";
+    $("barfill").style.width = item.retained + "%";
+    $("pillModel").textContent = item.model;
+    $("pillYear").textContent = item.year + " model";
+    $("pillKm").textContent = item.kms.toLocaleString("en-IN") + " km";
+    $("pillCity").textContent = item.city;
+    currentValuation = item;
+}
+$("undoValuation").addEventListener("click", () => {
+    const removed = valuationStack.pop();
+    if (!removed) return;
+    const previous = valuationStack.peek();
+    if (previous) {
+        showValuation(previous);
+        $("toast").textContent = `Undo complete: removed the latest ${removed.model} result and restored the previous valuation.`;
+    } else {
+        currentValuation = null;
+        $("currentPrice").textContent = "—";
+        $("futurePrice").innerHTML = "—<span>Run a new valuation to see the outlook</span>";
+        $("retained").textContent = "—";
+        $("barfill").style.width = "0%";
+        $("pillModel").textContent = "No active valuation";
+        $("pillYear").textContent = "—";
+        $("pillKm").textContent = "—";
+        $("pillCity").textContent = "—";
+        $("toast").textContent = "Undo complete: the valuation stack is now empty.";
+    }
+    $("toast").style.display = "block";
+    renderStack();
+});
 $("carForm").addEventListener("submit", event => {
     event.preventDefault();
     estimate();
 });
-
 $("reset").addEventListener("click", () => {
     $("model").value = "honda city";
     $("year").value = "2015";
     $("price").value = "850000";
     $("kms").value = "45000";
     $("owners").value = "0";
-
     if (apiReady) {
-        if ([...$("fuel").options].some(o => o.value === "petrol")) {
-            $("fuel").value = "petrol";
-        }
-        if ([...$("transmission").options].some(o => o.value === "manual")) {
-            $("transmission").value = "manual";
-        }
-        if ([...$("city").options].some(o => o.value === "hyderabad")) {
-            $("city").value = "hyderabad";
-        }
+        if ([...$("fuel").options].some(o => o.value === "petrol")) $("fuel").value = "petrol";
+        if ([...$("transmission").options].some(o => o.value === "manual")) $("transmission").value = "manual";
+        if ([...$("city").options].some(o => o.value === "hyderabad")) $("city").value = "hyderabad";
     }
-
     estimate();
 });
-
+renderDSA();
 loadOptions();
+
 </script>
 </body></html>
